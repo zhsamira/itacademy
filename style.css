@@ -1,23 +1,97 @@
-body{margin: 0px; color: #76214B}
-#fixed{
+.top1 {
+      background: #ccc;
+      padding: 5px;
+        padding-right: 20px;
+            text-align: center;
+    }
 
-			position: fixed;
-			left: 0px;
-			bottom:0px;
-			width: 100%;
-			height: 50px;
-			background-color: #B43273;
-			text-align: center;
-			line-height: 50px;
-			font-size: 21px;
-			color: white;
-			border-top: 1px solid #76214B;
+    .block_with_table {
+      float: left;
+      padding: 5px;
+        padding-right: 20px; 
+        /*border: solid 1px black;*/
+        float: left; 
+        position: relative; 
+        top: 30px; 
+        left: 70px;
+
+    }
+
+    .block_with_ol {
+      background: #fc0; 
+        padding: 5px; 
+        /*border: solid 1px black;*/ 
+        float: left; 
+        position: relative; 
+        top: 10px; 
+        left: 80px; 
+        opacity: .6
+    }
+
+    .block_with_ul {
+      background: #4b0082;
+      float: left; 
+        padding: 5px; 
+        border: solid 1px black; 
+        float: left; 
+        position: relative; 
+        top: 100px; 
+        left: 0px;
+        opacity: .35;
+        color: white;
+        border-color: white;
+    }
+
+    .block_with_image {
+      width: 150px;
+      height: 150px;
+      animation: nev 5s alternate;
 }
-#text{
-			width: 600px;
-			margin: 10px auto 60px auto;
-			padding: 20px;
-			border: 1px solid #B43273;
-			border-radius: 20px 20px 0px 0px;
+@keyframes nev{
+0%{
+  opacity: 0;
+  border-radius: 50%;
 }
-h1{margin: 0px; color: #B43273}
+20%{
+  opacity: 0.2;
+  border-radius: 40%;
+}
+50%{
+  opacity: 0.5;
+  border-radius: 30%;
+}
+100%{
+  opacity: 1;
+  border-radius: 0;
+}
+
+    }
+
+    .block_empty {
+      background: red;
+      padding: 50px;
+
+    }
+
+    .block_with_form {
+      background: #800000;
+      float: left; 
+        padding: 5px; 
+        border: solid 1px black; 
+        float: left; 
+        position: relative; 
+        top: 120px; 
+        left: -180px;
+        color: black;
+    }
+  
+     .block-animation {
+          width: 130px;
+          height: 450px;
+          background-color: #2196F3;
+transition: width 1s cubic-bezier(0, 0, 1, 1) 500ms;
+        }
+        
+        .block-animation:hover {
+          width: 100%;
+        }
